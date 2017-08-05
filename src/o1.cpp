@@ -101,9 +101,9 @@ int main(int argc, const char* argv[]) {
   
   uint64_t tick = 0;
 
-  while(tick++ < 60000000) {
-    if (tick % 1000000 == 0) {
-      std::cerr << (float)tick / 300000 << "%" << std::endl; 
+  while(c.particles.size() < 3000) {
+    if (c.particles.size() % 300 == 0) {
+      std::cerr << (float) c.particles.size() / 30.0 << "%" << std::endl; 
     }
     walker->randomWalk();
     c.checkClusterParticleCollision(&walker);
