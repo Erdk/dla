@@ -1,9 +1,9 @@
-# o1 o3
+# DLA
 Generate and visualize structure built with diffusion-limited aggregation
 
 # How to run?
 
-* Build o1 and o3 with cmake and g++/clang
+* Build dla2d and dla3d with cmake and g++/clang
 * Produce result.csv file and put in "data" directory, or use one provided
-* Open o1.pde in Processing (processing.org)
+* Open dla2d.pde (dla3d.pde WIP) in Processing (processing.org)
 

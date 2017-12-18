@@ -4,8 +4,9 @@ set (CMAKE_CXX_STANDARD 14)
 
 find_package(Boost COMPONENTS program_options)
 include_directories(${Boost_INCLUDE_DIRS})
-add_executable (o1 src/o1.cpp)
-target_link_libraries(o1 ${Boost_LIBRARIES})
 
-add_executable (o3 src/o3.cpp)
-target_link_libraries(o3 ${Boost_LIBRARIES})
+add_executable (dla2d src/dla2d.cpp)
+target_link_libraries(dla2d ${Boost_LIBRARIES})
+
+add_executable (dla3d src/dla3d.cpp)
+target_link_libraries(dla3d ${Boost_LIBRARIES})
