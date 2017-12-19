@@ -181,7 +181,7 @@ int main(int argc, const char* argv[]) {
 	}
 
   std::ofstream output;
-  output.open("result_3d.csv");
+  output.open("result.csv");
 	for (Particle* p : c.particles) {
 		output << p->x << "," << p->y << "," << p->z << "\n";
 	}
